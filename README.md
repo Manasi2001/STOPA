@@ -9,31 +9,31 @@ The results presented in Table 4 of the paper [1] benchmark various systems unde
 ```
 .
 ├── AASIST_CM_EERs_pooled/               # Pooled EER CSVs for AASIST_CM
-├── AASIST_CM_embeddings/                # Fingerprint embeddings for each spoof condition (AASIST_CM)
-├── AASIST_CM_evaluation.csv             # Score labels and cosine similarity (AASIST_CM)
+├── AASIST_CM_embeddings/                # Fingerprint embeddings for each spoof condition (AASIST_CM)*
+├── AASIST_CM_evaluation.csv             # Score labels and cosine similarity (AASIST_CM)*
 ├── AASIST_CM_fingerprint_avg_emb.csv    # Averaged fingerprint embeddings (AASIST_CM)
-├── AASIST_CM_protocol_trials.npy        # Trial protocol data for AASIST_CM
+├── AASIST_CM_protocol_trials.npy        # Trial protocol data for AASIST_CM*
 │
 ├── AASIST_STOPA_EERs_pooled/            # Pooled EER CSVs for AASIST_STOPA
-├── AASIST_STOPA_embeddings/             # Fingerprint embeddings for each spoof condition (AASIST_STOPA)
-├── AASIST_STOPA_evaluation.csv          # Score labels and cosine similarity (AASIST_STOPA)
+├── AASIST_STOPA_embeddings/             # Fingerprint embeddings for each spoof condition (AASIST_STOPA)*
+├── AASIST_STOPA_evaluation.csv          # Score labels and cosine similarity (AASIST_STOPA)*
 ├── AASIST_STOPA_fingerprint_avg_emb.csv # Averaged fingerprint embeddings (AASIST_STOPA)
-├── AASIST_STOPA_protocol_trials.npy     # Trial protocol data for AASIST_STOPA
+├── AASIST_STOPA_protocol_trials.npy     # Trial protocol data for AASIST_STOPA*
 │
 ├── ResNet-34_STOPA_EERs_pooled/         # Pooled EER CSVs for ResNet-34
-├── ResNet-34_STOPA_evaluation.csv       # Evaluation results for ResNet-34
+├── ResNet-34_STOPA_evaluation.csv       # Evaluation results for ResNet-34*
 │
 ├── models/                              # Trained model checkpoints
 │   ├── AASIST_CM.pth
 │   ├── AASIST_STOPA.pth
-│   └── ResNet-34.pth
+│   └── ResNet-34.pth*
 │
 ├── config/                              # Model config files
 │   ├── AASIST.conf
 │   └── ResNet-34.conf
 │
-├── protocols_fingerprint_extraction/    # Protocol files for fingerprint creation
-├── protocols_trials_extended/           # Protocol files for trial embedding extraction
+├── protocols_fingerprint_extraction/    # Protocol files for fingerprint creation*
+├── protocols_trials_extended/           # Protocol files for trial embedding extraction*
 │
 ├── compute_eer_pooled.py                # Script to compute pooled EERs
 ├── cosine_sim.py                        # Compute cosine similarities between fingerprint and trial embeddings
@@ -42,6 +42,9 @@ The results presented in Table 4 of the paper [1] benchmark various systems unde
 ├── trials_embedding_extraction.py       # Extract embeddings for trial utterances
 
 ```
+
+**Large files/folders that could not be uploaded on GitHub due to size limit can be accessed [here](https://studentuef-my.sharepoint.com/:f:/g/personal/manachhi_uef_fi/Ers-4fRfAsdIj-L-05Fde0ABM_BXVelJkaiAUC_ni2yBFw?e=HImwk8).*
+
 ### Dataset Preparation
 
 The STOPA dataset is available at https://zenodo.org/records/15606628. Please follow the instructions on the page to download and extract the corpus. In this repository, the `TEE` folder from STOPA corresponds to `protocols_fingerprint_extraction/`, and the `Trials` folder maps to `protocols_trials_extended/`. Place these folders accordingly before running the embedding and evaluation scripts.
